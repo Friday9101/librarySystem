@@ -1,0 +1,157 @@
+﻿@model NEWLIBRARY.Models.STUDENTS
+
+@{
+    ViewBag.Title = "DELETE";
+    Layout = "~/Views/Sheared/ADminEdit_LayOut.cshtml";
+}
+
+
+
+@using (Html.BeginForm("delete", "STUDENTS", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+
+    
+    
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+
+                    <h2>@Model.FirstName @Model.LastName Details</h2>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+
+
+
+
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+
+                        <div class="col-lg-5">
+                            <div class="owl-carousel portfolio-details-carousel">
+                                <img src="@Url.Content(Model.ST_IMAGE)" class="img-fluid" alt="img 2">
+                            </div>
+
+
+
+
+                            <ul class="portfolio-info">
+
+                                <li>
+
+                                    |
+   <span class="linkedit1">@Html.ActionLink("NO", "index", new { id = Model.ID })   </span>
+
+                                    <input type="submit" value="DELETE" />
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="col-lg-7 portfolio-info">
+                            <ul>
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.FirstName):</strong>
+                                    @Html.DisplayFor(model => model.FirstName)
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.LastName):</strong>
+                                    @Html.DisplayFor(model => model.LastName)
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.DEPARTMENT):</strong>
+                                    @Html.DisplayFor(model => model.DEPARTMENT)
+                                </li>
+
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.MatricNumber):</strong>
+                                    @Html.DisplayFor(model => model.MatricNumber)
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.Phone):</strong>
+                                    @Html.DisplayFor(model => model.Phone)
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.ST_Email):</strong>
+                                    @Html.DisplayFor(model => model.ST_Email)
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.ST_Password):</strong>
+                                    <span>*** *** ***</span>
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.ClassLevel):</strong>
+                                    @Html.DisplayFor(model => model.ClassLevel)
+                                </li>
+
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.Sex):</strong>
+                                    @Html.DisplayFor(model => model.Sex)
+                                </li>
+
+                                <li><strong>
+                                    @Html.DisplayNameFor(model => model.DateOfBirth):</strong>
+                                    @Html.DisplayFor(model => model.DateOfBirth)
+                                </li>
+
+
+
+
+
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Portfolio Details Section -->
+
+
+    
+
+}
+
+
+
+

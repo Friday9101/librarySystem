@@ -1,0 +1,85 @@
+﻿@model NEWLIBRARY.Models.STUDENTS
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Sheared/otherLayout.cshtml";
+}
+
+
+<div class="container">
+    
+                    <div class="text-center form-ro ">
+                        <h1>welcome to fpi e-lybrary</h1>
+                        
+                    </div>
+
+     <div class="pricing ">
+        
+                    <div class="text-center form-ro ">
+                        <h1>LOG IN</h1>
+                        
+                    </div>
+                <div class="box featured">
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+
+
+        
+            <div class="pricing ">
+                <div class="box2 featured">
+
+
+                    
+
+
+                    <div class="form-row form-ro ">
+                        
+
+                        <div class="form-group col-md-6">
+                            <label for="nam">@Html.DisplayNameFor(model => model.MatricNumber):</label>
+                            <input type="text" class="form-control input-lg" id="nam" placeholder="Enter Matric Number" name="nam">
+                            <div class="validate h6">@ViewBag.ErrorMessagename  </div>
+                        </div>
+
+
+
+                        <div class="form-group col-md-6">
+                            <label for="pass">@Html.DisplayNameFor(model => model.ST_Password):</label>
+                            <input type="password" class="form-control input-lg" id="pass" placeholder="Enter Password" name="pass">
+                            <div class="validate  h6">@ViewBag.ErrorMessagepass </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="text-center form-ro ">
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">LOG IN</button>
+
+                        <span class="h6">@ViewBag.ErrorMessage</span>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        }
+
+</div>
+</div>
+</div>

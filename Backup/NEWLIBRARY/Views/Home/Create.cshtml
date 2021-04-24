@@ -1,0 +1,245 @@
+﻿@model NEWLIBRARY.Models.BOOKS
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Sheared/ADminEdit_LayOut.cshtml";
+}
+
+<div class="container">
+
+    @using (Html.BeginForm("Create", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+        
+        <div class="pricing">
+        <div class="box featured">
+
+                        
+                        <div class="text-center form-ro ">
+                        <h1>Create New Book</h1>   
+                        </div>
+
+
+        <div class="form-row form-ro ">
+
+
+
+
+            <div class="form-group col-md-7">
+                <div class="pricing">
+
+                    <div class="box featured">
+
+
+
+
+                        <div class="form-row form-ro ">
+
+
+                            <div class="form-group col-md-6">
+                                <label for="BOOK_NAME">@Html.DisplayNameFor(model => model.BOOK_NAME):</label>
+                                <input type="text" class="form-control" placeholder="Enter BOOK NAME" name="BOOK_NAME">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.BOOK_NAME)</div>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="AuthorName">@Html.DisplayNameFor(model => model.AuthorName):</label>
+                                <input type="text" class="form-control" placeholder="Enter Author NAME" name="AuthorName">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.BOOK_NAME)</div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        <div class="form-row form-ro ">
+
+
+                            <div class="form-group col-md-6">
+                                <label for="DEPARTMENT">@Html.DisplayNameFor(model => model.DEPARTMENT):</label>
+                                <input type="text" class="form-control" placeholder="Enter DEPARTMENT" name="DEPARTMENT">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.DEPARTMENT)</div>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="BookID">@Html.DisplayNameFor(model => model.BookID):</label>
+                                <input type="text" class="form-control" placeholder="Enter Book ID" name="BookID">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.BookID)</div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-row form-ro ">
+
+
+                            <div class="form-group col-md-6">
+                                <label for="Copies">@Html.DisplayNameFor(model => model.Copies):</label>
+                                <input type="text" class="form-control" placeholder="Enter Copies" name="Copies">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.Copies)</div>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="VERSION">@Html.DisplayNameFor(model => model.VERSION):</label>
+                                <input type="text" class="form-control" placeholder="Enter VERSION" name="VERSION">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.VERSION)</div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-row form-ro ">
+
+
+                            <div class="form-group col-md-4">
+                                <label for="MadeIn">@Html.DisplayNameFor(model => model.MadeIn):</label>
+                                <input type="text" class="form-control" placeholder="Enter Made In Year" name="MadeIn">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.MadeIn)</div>
+                            </div>
+
+
+                            <div class="form-group col-md-4">
+                                <label for="PublisherYear">@Html.DisplayNameFor(model => model.PublisherYear):</label>
+                                <input type="text" class="form-control" placeholder="Enter Publish Year" name="PublisherYear">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.PublisherYear)</div>
+                            </div>
+
+
+                            <div class="form-group col-md-4">
+                                <label for="CopyRightYear">@Html.DisplayNameFor(model => model.CopyRightYear):</label>
+                                <input type="text" class="form-control" placeholder="Enter CopyRight Year" name="CopyRightYear">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.CopyRightYear)</div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="form-row form-ro ">
+
+                            <div class="form-group  col-md-12">
+                                <label for="Comment">@Html.DisplayNameFor(model => model.Comment):</label>
+                                <textarea class="form-control" name="Comment" rows="10"></textarea>
+                                <div class="validate">@Html.ValidationMessageFor(model => model.Comment)</div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="form-row form-ro ">
+
+
+                            <div class="form-group  col-md-12">
+                                <label for="PREVIEW">@Html.DisplayNameFor(model => model.PREVIEW):</label>
+                                <textarea class="form-control" name="PREVIEW" rows="10"></textarea>
+                                <div class="validate">@Html.ValidationMessageFor(model => model.PREVIEW)</div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="form-group col-md-5">
+                <div class="pricing heig">
+
+                    <div class="box featured">
+
+                        <div class="form-row ">
+
+
+
+
+                            <div class="form-group col-md-12 form-ro">
+                                <label for="file">@Html.DisplayNameFor(model => model.imgFile):</label>
+                                <input type="file" name="imgFile">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.imgFile)</div>
+                            </div>
+
+
+
+                            <div class="form-group col-md-12 form-ro">
+                                <label for="file">@Html.DisplayNameFor(model => model.imgFile2):</label>
+                                <input type="file" name="imgFile2">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.imgFile2)</div>
+                            </div>
+
+
+
+                            <div class="form-group col-md-12 form-ro">
+                                <label for="file">@Html.DisplayNameFor(model => model.imgFile3):</label>
+                                <input type="file" name="imgFile3">
+                                <div class="validate">@Html.ValidationMessageFor(model => model.imgFile3)</div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+            
+
+                        <div class="text-center form-ro ">
+                            <button type="submit">CREATE</button>
+
+                        </div>
+
+            
+            </div>
+            </div>
+ 
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>

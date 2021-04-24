@@ -1,0 +1,269 @@
+﻿@model IEnumerable<NEWLIBRARY.Models.BOOKS>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+    
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(~/library/assets/img/slide/slide-1.jpg);">
+            <div class="carousel-background"><img src="~/library/assets/img/slide/slide-1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>WELCOME TO</span> E LIBRARY</h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(~/library/assets/img/slide/slide-2.jpg);">              
+            <div class="carousel-background"><img src="~/library/assets/img/slide/slide-2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(~/library/assets/img/slide/slide-13.jpg);">
+            <div class="carousel-background"><img src="~/library/assets/img/slide/slide-13.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+           
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+    
+
+
+
+
+
+
+
+
+
+<section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+            @*<div class="content">*@
+            <div class="col-lg-12 d-flex content align-items-center">
+                <div class="col-lg-1 "></div>
+                <div class="col-lg-11 ">
+                    <h3><strong>LATEST BOOK</strong></h3>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                <img src="~/SEGUNview/assets/img/skills.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+                <h3>@ViewBag.titlezA</h3>
+                <p class="font-italic">
+                    @ViewBag.messagezA
+                </p>
+
+                <div class="skills-content">
+
+                    <div class="progress">
+                        <span class="skill">@ViewBag.timezA <i class="val">@ViewBag.datezA</i></span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+  <!-- ======= contact Section ======= -->
+        <section class="container allcon" id="Contact1" >
+        <div class="container allcon-x">   
+            <div class="contitle">
+                <h2>Contact</h2>
+                <h3>Get In Touch With <span>Us</span></h3>
+                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+              </div>  
+                   
+
+
+
+            <div class="row  conall ">
+
+
+                <div class="col-lg-6 ">
+                    <div class="row condetails">
+                        <div class="row">
+                        <div class="col-lg-6 col-xs-6  ">
+                       <div class=" each">
+                            <h4>ADDRESS</h4>
+                    
+                            <p> Federal Polytechnic Ilaro, Ogun State. Nigeria. </p>
+                       
+                        </div>
+                    </div>
+
+
+                        <div class="col-lg-6 col-xs-6 ">
+                            <div class=" each">
+                            <h4> CALL US</h4>
+                            <p>+234 806 030 5859<br>+234 905 522 5209 </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-6 ">
+                            <div class=" each">
+                       
+                            <h4> EMAIL US</h4>
+                    
+                            <p>Friday9101@GMAIL.COM<br>ogbofriday9101@GMAIL.COM</p>
+                        </div>
+                      </div> 
+                      
+
+
+                        <div class="col-lg-6 col-xs-6 ">
+                            <div class="each">
+                            <h4>WORKING HOURS</h4>
+                            <p>
+                                Mon - Fri: 9AM to 9PM
+                                <br>
+                                SAT: 9AM to 5PM
+                            </p>
+                       
+                        </div>
+                    </div>
+                </div>
+                    </div>                   
+                  
+                    
+               </div>
+
+
+
+               
+                   <div class="col-lg-6 conform">
+                   
+                    
+                <div  class="conforminer">
+                    <form">
+                       
+                        
+            <div class="row">
+                <div class="col-lg-6 ">
+                        <div class="form-group">
+                          <label for="Name">Your Name:</label>
+                          <input type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-6 ">
+                        <div class="form-group">
+                          <label for="email">Your Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                    </div>
+         </div>
+
+                        <div class=" form-group">
+                          <label for="Subject">Subject:</label>
+                          <input type="Subject" class="form-control" id="Subject" placeholder="Enter Subject" name="Subject">
+                        </div>
+                        
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                           
+                        <textarea class="form-control" id= "message" name="message" rows="8"></textarea>
+                    
+                        </div>
+
+
+                        <div class="  btnsend text-center">
+                            <button type="submit" class="textcenter">Send Message</button>
+                        </div>
+                        
+                      </form>
+
+
+
+
+                       
+                 </div>
+           </div>
+    
+        </div>
+
+
+
+        </div>
+    
+
+    </section>
+
+
+  <!-- ======= contact Section ======= -->
+
+
+
+
+
+
+
+
+
+
+

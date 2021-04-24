@@ -1,0 +1,96 @@
+﻿@model NEWLIBRARY.Models.STUDENTS
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>STUDENTS</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MatricNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MatricNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ST_Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ST_Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ST_Password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ST_Password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ClassLevel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ClassLevel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Sex)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sex)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DateOfBirth)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DateOfBirth)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ST_IMAGE)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ST_IMAGE)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DEPARTMENT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DEPARTMENT)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Deletelist", "Admin")
+    </p>
+}

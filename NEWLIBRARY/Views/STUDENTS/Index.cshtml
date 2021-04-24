@@ -1,0 +1,77 @@
+﻿@model IEnumerable<NEWLIBRARY.Models.STUDENTS>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatricNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ST_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ST_Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sex)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DEPARTMENT)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatricNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ST_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ST_Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sex)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEPARTMENT)
+        </td>
+
+    </tr>
+}
+
+</table>

@@ -1,0 +1,123 @@
+﻿@model NEWLIBRARY.Models.STUDENTS
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+}
+<div class="container"> 
+
+<fieldset>
+    <legend>STUDENTS DETAIL</legend>
+    
+    <div class="row">
+    <div class="col-lg-2 display-label">
+         @Html.DisplayNameFor(model => model.FirstName)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+ </div>
+    
+
+    <div class="row">
+    <div class="col-lg-2 display-label">
+         @Html.DisplayNameFor(model => model.LastName)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+     </div>
+    
+
+    <div class="row">
+    <div class="col-lg-2 display-label">
+         @Html.DisplayNameFor(model => model.MatricNumber)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.MatricNumber)
+    </div>
+</div>
+
+
+    
+    <div class="row">
+    <div class="col-lg-2  display-label">
+         @Html.DisplayNameFor(model => model.Phone)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-lg-2 display-label">
+         @Html.DisplayNameFor(model => model.ST_Email)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.ST_Email)
+    </div>
+</div>
+
+
+    
+    <div class="row">
+    <div class="col-lg-2 display-label">
+         @Html.DisplayNameFor(model => model.ST_Password)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.ST_Password)
+    </div>
+     </div>
+
+    <div class="row">
+    <div class="col-lg-2  display-label">
+         @Html.DisplayNameFor(model => model.ClassLevel)
+    </div>
+    <div class="col-lg-10  display-field">
+        @Html.DisplayFor(model => model.ClassLevel)
+    </div>
+         </div>
+    
+    <div class="row">
+    <div class="col-lg-2  display-label">
+         @Html.DisplayNameFor(model => model.Sex)
+    </div>
+    <div class="col-lg-10  display-field">
+        @Html.DisplayFor(model => model.Sex)
+    </div>
+
+    </div>
+
+    
+    <div class="row">
+    <div class=" col-lg-2  display-label">
+          @Html.DisplayNameFor(model => model.DateOfBirth)
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.DateOfBirth)
+    </div>
+         </div>
+
+
+
+    <div class="row">
+    <div class="col-lg-2 display-label">
+         @Html.DisplayNameFor(model => model.DEPARTMENT) 
+    </div>
+    <div class="col-lg-10 display-field">
+        @Html.DisplayFor(model => model.DEPARTMENT)
+    </div>
+        </div>
+
+
+</fieldset>
+
+
+
+      </div>
+
+
+
+
+

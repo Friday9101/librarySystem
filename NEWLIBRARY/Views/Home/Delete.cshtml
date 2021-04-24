@@ -1,0 +1,187 @@
+﻿@model NEWLIBRARY.Models.BOOKS
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Sheared/ADminEdit_LayOut.cshtml";
+}
+
+
+
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    
+    
+
+
+
+     
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            
+
+            <div class="col-xl-10">
+<h2>Are you sure you want to delete 
+                @Model.BOOK_NAME</h2>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Breadcrumbs -->
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="row">
+
+                    <div class="col-lg-5">
+                        <div class="owl-carousel portfolio-details-carousel">
+
+                            
+                            <img src="@Url.Content(Model.book_img2)" class="img-fluid" alt="img 2">
+                            <img src="@Url.Content(Model.book_img3)" class="img-fluid" alt="img 3">
+                            <img src="@Url.Content(Model.book_img)" class="img-fluid" alt="1">
+
+
+                     
+                               </div>
+                
+
+                                               
+<ul class="portfolio-info">
+
+    <li>
+        
+            <input type="submit" value="DELETE"    /> |
+   <span class="linkedit1" >   @Html.ActionLink("NO", "Detaillist", "HOME")   </span> 
+
+
+</li>
+</ul>
+       
+                        
+                                
+    
+
+
+                    </div>
+
+                    <div class="col-lg-7 portfolio-info">
+                        <ul>
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.BOOK_NAME)</strong> 
+                                @Html.DisplayFor(model => model.BOOK_NAME)
+                            </li>
+
+
+                            
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.DEPARTMENT)</strong> 
+                                @Html.DisplayFor(model => model.DEPARTMENT)
+                            </li>
+                            
+
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.AuthorName)</strong> 
+                                @Html.DisplayFor(model => model.AuthorName)
+                            </li>
+
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.BookID)</strong> 
+                                @Html.DisplayFor(model => model.BookID)
+                            </li>
+                            
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.Copies)</strong> 
+                                @Html.DisplayFor(model => model.Copies)
+                            </li>
+
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.CopyRightYear)</strong> 
+                                @Html.DisplayFor(model => model.CopyRightYear)
+                            </li>
+
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.MadeIn)</strong> 
+                                @Html.DisplayFor(model => model.MadeIn)
+                            </li>
+
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.PublisherYear)</strong> 
+                                @Html.DisplayFor(model => model.PublisherYear)
+                            </li>
+
+                            
+                            <li><strong>
+                                @Html.DisplayNameFor(model => model.VERSION)</strong> 
+                                @Html.DisplayFor(model => model.VERSION)
+                            </li>
+
+                            
+
+
+                                                      
+                             </ul>
+
+                        
+                        <p><strong>
+                                @Html.DisplayNameFor(model => model.Comment)</strong> <br />
+                                @Html.DisplayFor(model => model.Comment)
+                        </p>
+
+
+                        <p><strong>
+                                @Html.DisplayNameFor(model => model.PREVIEW)</strong> <br />
+                                @Html.DisplayFor(model => model.PREVIEW)
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Portfolio Details Section -->
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

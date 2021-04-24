@@ -1,0 +1,303 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-ro{
+    margin-top: 3%;
+}
+
+.pricing .featured {
+  border-top-color: #47b2e4;
+}
+
+.pricing .featured .buy-btn {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.pricing .featured .buy-btn:hover {
+  background: #23a3df;
+}
+.heiglogin{
+    height:100em;
+    margin-top:4em;
+    position:static;
+}
+.heig {
+    height:100%;
+}
+.hl {
+border-bottom-color:#faecec;
+}
+
+.linkedit {
+    color:blue;
+    background-color:#232121;
+    width:4em;
+    height:1.5em;
+
+    text-align:center;
+    font-size:19px;
+    border-radius :5px 13px;
+
+
+}
+
+.overflowTest {
+    padding: 5px;
+    width: 100%;
+    height: 96px;
+    overflow: hidden;
+
+}
+
+.FMARGINs {
+    margin-top:4.4em;
+}
+
+
+
+.h6, .validate{
+    color:red;
+}
+
+.rightt2 {
+    float:right;
+}
+
+.rightt {
+    float:right;
+    margin-right:20em;
+}
+.ddd {
+    color:#f35858 ;
+    text-align:center;
+    background-color:#494744;
+}
+
+.linkedit1 {     
+
+    color:blue;
+    border-radius :1px;
+    background-color:#232121;
+    width:14em;
+    height:4.5em;
+    font-size:19px;
+    background-color:#f5eded;
+    border-color:red;
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Cliens
+--------------------------------------------------------------*/
+.cliens {
+  padding: 12px 0; 
+  text-align: center;
+}
+
+.cliens img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+}
+
+.cliens img:hover {
+  -webkit-filter: none;
+  filter: none;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .cliens img {
+    max-width: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+
+
+
+.pricing .box2 {
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  background: rgba(20, 45, 100, 0.1);
+  height: 20em;
+
+  border-radius: 5px;
+}
+
+
+
+
+.pricing .row {
+  padding-top: 40px;
+}
+
+.pricing .box {
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  background: rgba(20, 45, 100, 0.1);
+  height: 100%;
+  border-top: 4px solid #e11414;
+  border-bottom: 4px solid #e11414;
+  border-radius: 5px;
+}
+
+.pricing h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.pricing h4 {
+  font-size: 48px;
+  color: #37517e;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 25px;
+}
+
+.pricing h4 sup {
+  font-size: 28px;
+}
+
+.pricing h4 span {
+  color: #47b2e4;
+  font-size: 18px;
+  display: block;
+}
+
+.pricing ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricing ul li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+}
+
+.pricing ul i {
+  color: #28a745;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+}
+
+.pricing ul .na i {
+  color: #ccc;
+}
+
+.pricing ul .na span {
+  text-decoration: line-through;
+}
+
+.pricing .buy-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 50px;
+  color: #47b2e4;
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+  border: 1px solid #47b2e4;
+}
+
+.pricing .buy-btn:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.pricing .featured {
+  border-top-color: #47b2e4;
+  border-bottom-color: #47b2e4;
+}
+
+.pricing .featured .buy-btn {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.pricing .featured .buy-btn:hover {
+  background: #23a3df;
+}
+
+@media (max-width: 992px) {
+  .pricing .box {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing .box {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing .box {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+
+
+
+
+

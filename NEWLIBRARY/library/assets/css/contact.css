@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////// 
+      friday's  contact details 
+ /// /////////////////////////////////////////////// */
+
+
+ 
+
+.btnsend .textcenter{
+    color: black;
+    background-color: blue;
+    font-size: 21px;
+    border-radius:5px;
+    height: 2.5em;
+}
+.contitle h2{
+    font-weight: bold;
+    color: blue;
+}
+.contitle{
+    text-align: center;
+}
+
+
+.allcon .allcon-x{
+    /* background-color: red; */
+    padding: 1.5em;
+    margin: 1em 0;
+    border-top: 5px  solid blue;
+    border-bottom: 5px  solid blue;
+    border-left: 2px  dashed whitesmoke;
+    border-right: 2px  dashed whitesmoke;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.each p{
+    text-align: center;
+    font-size:14px;
+    
+
+}
+.each h4{
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size:14px;
+}
+.conform .conforminer, .condetails{
+    background-color: rgba(255, 255, 255, 0.616);
+    margin: 1em 3px;
+    padding: 9px;
+}
+
+.condetails{
+    height: 100%;
+}
+
+
+
+.condetails .each{
+/* background-color:  RED; */
+padding: 2em;
+margin: 2em 0 ;
+}
+
+
+
+
+.conall{
+    background-color: ghostwhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<NEWLIBRARY.Models.BOOKS>
+
+@{
+    ViewBag.Title = "Detaillist";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+}
+
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayName("WHICH BOOK?")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink(item.BOOK_NAME, "Details", "Home", new { id=item.ID },null)
+        </td>
+
+    </tr>
+}
+
+</table>
+
+

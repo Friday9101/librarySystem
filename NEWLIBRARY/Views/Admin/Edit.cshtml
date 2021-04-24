@@ -1,0 +1,222 @@
+﻿@model NEWLIBRARY.Models.STUDENTS
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+}
+
+
+@using (Html.BeginForm("edit", "admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+
+
+
+    <div class="pricing">
+        <div class="featured">
+
+
+            <div class="text-center form-ro ">
+                <h1>Edit @Model.FirstName</h1>
+            </div>
+
+
+            <div class="form-row form-ro ">
+
+
+
+
+                <div class="form-group col-md-8">
+                    <div class="pricing">
+
+                        <div class="featured">
+
+
+                            @*first and last name*@
+                            <div class="form-row form-ro ">
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="FirstName">@Html.DisplayNameFor(model => model.FirstName):</label>
+                                    <input type="text" value="@Model.FirstName" class="form-control" id="FirstName" placeholder="Enter First NAME" name="FirstName">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.FirstName)</div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="LastName">@Html.DisplayNameFor(model => model.LastName):</label>
+                                    <input type="text"  value="@Model.LastName"   class="form-control" id="LastName" placeholder="Enter Last NAME" name="LastName">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.LastName)</div>
+                                </div>
+
+
+                            </div>
+
+
+                            @*Matric Number and department*@
+                            <div class="form-row form-ro ">
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="DEPARTMENT">@Html.DisplayNameFor(model => model.DEPARTMENT):</label>
+                                    <input type="text"  value="@Model.DEPARTMENT"  class="form-control" id="DEPARTMENT" placeholder="Enter DEPARTMENT NAME" name="DEPARTMENT">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.DEPARTMENT)</div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="MatricNumber">@Html.DisplayNameFor(model => model.MatricNumber):</label>
+                                    <input type="text" class="form-control"  value="@Model.MatricNumber"  id="MatricNumber" placeholder="Enter Matric Number " name="MatricNumber">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.MatricNumber)</div>
+                                </div>
+
+
+                            </div>
+
+
+                            @*Phone and Email *@
+                            <div class="form-row form-ro ">
+
+
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="Phone">@Html.DisplayNameFor(model => model.Phone):</label>
+                                    <input type="text"  value="@Model.Phone"  class="form-control" id="Phone" placeholder="Enter Phone number" name="Phone">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.Phone)</div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="ST_Email">@Html.DisplayNameFor(model => model.ST_Email):</label>
+                                    <input type="text"  value="@Model.ST_Email"  class="form-control" id="ST_Email" placeholder="Enter Email" name="ST_Email">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.ST_Email)</div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            @*ClassLevel and Password *@
+                            <div class="form-row form-ro ">
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="ClassLevel">@Html.DisplayNameFor(model => model.ClassLevel):</label>
+                                    <input type="text"  value="@Model.ClassLevel"   class="form-control" id="ClassLevel" placeholder="Enter Class Level" name="ClassLevel">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.ClassLevel)</div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="ST_Password">@Html.DisplayNameFor(model => model.ST_Password):</label>
+                                    <input type="Password"  value="@Model.ST_Password"    class="form-control" id="ST_Password" placeholder="Enter Password" name="ST_Password">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.ST_Password)</div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            @*DOB and Sex *@
+                            <div class="form-row form-ro ">
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="Sex">@Html.DisplayNameFor(model => model.Sex):</label>
+                                    <input type="text"   value="@Model.Sex"  class="form-control" id="Sex" placeholder="Enter Sex" name="Sex">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.Sex)</div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="DateOfBirth">@Html.DisplayNameFor(model => model.DateOfBirth):</label>
+                                    <input type="text"   value="@Model.DateOfBirth" class="form-control" id="DateOfBirth" placeholder="Enter DOB" name="DateOfBirth">
+                                    <div class="validate">@Html.ValidationMessageFor(model => model.DateOfBirth)</div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="text-center form-ro ">
+                        <button type="submit">CREATE</button>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="form-group col-md-4">
+                    <div class="pricing heig">
+
+                        <div class="featured">
+
+                            <div class="form-row ">
+
+
+
+
+                                <div class="form-group col-md-12 form-ro">
+                                    <label for="file">@Html.DisplayNameFor(model => model.imgFile):</label>
+                                    <input type="file"  value="@Model.imgFile"   id="file" name="imgFile">
+                                    <div class="validate h6">@Html.ValidationMessageFor(model => model.imgFile)</div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

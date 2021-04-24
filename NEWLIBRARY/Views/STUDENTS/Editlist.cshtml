@@ -1,0 +1,33 @@
+﻿@model IEnumerable<NEWLIBRARY.Models.STUDENTS>
+
+@{
+    ViewBag.Title = "Editlist";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+    @*<a href="~/Views/Sheared/Admin%20_LayOut.cshtml">~/Views/Sheared/Admin_LayOut.cshtml</a>*@
+}
+
+
+
+
+<table>
+    <tr>
+
+        <th>
+            @Html.DisplayName("DELETE WHO?")
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+
+                @Html.ActionLink(item.FirstName + " " + item.LastName, "Edit", new { id = item.ID })
+            </td>
+
+        </tr>
+    }
+
+</table>
+

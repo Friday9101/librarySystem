@@ -1,0 +1,36 @@
+﻿@model IEnumerable<NEWLIBRARY.Models.STUDENTS>
+
+@{
+    ViewBag.Title = "Detailslist";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+}
+
+
+
+
+
+<table>
+    <tr>
+
+        <th>
+            @Html.DisplayName("WHOSE? DETAIL")
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+
+                @Html.ActionLink(item.FirstName + " " + item.LastName, "Details", "admin", new { id = item.ID }, null)
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+
+
+

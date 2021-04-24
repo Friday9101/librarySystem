@@ -1,0 +1,115 @@
+﻿@model NEWLIBRARY.Models.STUDENTS
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Sheared/Admin_LayOut.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("edit", "admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>STUDENTS</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MatricNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MatricNumber)
+            @Html.ValidationMessageFor(model => model.MatricNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Phone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Phone)
+            @Html.ValidationMessageFor(model => model.Phone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ST_Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ST_Email)
+            @Html.ValidationMessageFor(model => model.ST_Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ST_Password)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ST_Password)
+            @Html.ValidationMessageFor(model => model.ST_Password)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ClassLevel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ClassLevel)
+            @Html.ValidationMessageFor(model => model.ClassLevel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Sex)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Sex)
+            @Html.ValidationMessageFor(model => model.Sex)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DateOfBirth)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DateOfBirth)
+            @Html.ValidationMessageFor(model => model.DateOfBirth)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ST_IMAGE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ST_IMAGE)
+            @Html.ValidationMessageFor(model => model.ST_IMAGE)
+        </div>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DEPARTMENT)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DEPARTMENT)
+            @Html.ValidationMessageFor(model => model.DEPARTMENT)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
